@@ -54,7 +54,7 @@ class Resource implements Api {
 
 	@Override
 	public String configProp() {
-		return this.config.getServers();
+		return this.config.getDate();
 	}
 
 	@Override
