@@ -6,13 +6,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "prop")
 public class Config {
 
-	private String servers;
+	private String date;
 
-	public String getServers() {
-		return this.servers;
+	public String getDate() {
+		return this.date;
 	}
 
-	public void setServers(String servers) {
-		this.servers = servers;
+	public void setDate(final String date) {
+		this.date = date;
 	}	
 }
