@@ -27,7 +27,7 @@ java -Dport=$CONFIG_SERVER_PORT -jar config-server/target/config-server-0.0.1-SN
 wait_till_started   $CONFIG_SERVER_PORT
 
 printf "\n\nStarting the microservice...\n\n"
-java $DEBUG -Dconfig.uri=http://localhost:$CONFIG_SERVER_PORT -Dport=14001 -jar microservice/target/microservice-0.0.1-SNAPSHOT.jar &
+java $DEBUG -Dconfig.uri=localhost:$CONFIG_SERVER_PORT -Dport=14001 -jar microservice/target/microservice-0.0.1-SNAPSHOT.jar &
 wait_till_started   14001
 
 printf "\n\nBefore updating the date property in config-repo...\n\n"
